@@ -40,7 +40,6 @@ h2{
 .navbar-brand span{
     padding: .1rem;
     font-weight: bold;
-    color: white;
     color: rgb(59, 82, 238);
     font-size: 25px;
     font-family: "Rammetto One";
@@ -53,12 +52,11 @@ h2{
 
 .navbar .nav-link{
     color: white;
-    
 }
 
 .navbar .nav-link:hover{
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     box-shadow: 1px 1.5px 2.5px 2px rgb(59, 82, 238);
 }
 
@@ -208,7 +206,7 @@ h2{
 /* project*/
 
 .container-project{
-    margin-bottom: 2rem;
+    margin: 3rem;
 }
 
 .container-project h4{
@@ -216,10 +214,17 @@ h2{
     margin-bottom: 1.5rem;
 }
 
+.container-project .list a{
+    text-decoration: none;
+    color: white;
+}
+
 .list{
-    padding: 1rem;
+    width: 70%;
+    background-color: rgb(81, 81, 138);
+    padding: .6rem;
     padding-left: 3rem;
-    margin: .6rem 1rem;
+    margin: .5rem 1rem;
     box-shadow: 1px 1.5px 2.5px 2px rgb(23, 63, 245);
     border-radius: 1rem;
     cursor: pointer;
@@ -228,14 +233,13 @@ h2{
 .container-project img{
     padding: 0.1rem;
     margin: 4rem 0;
-    margin-left: 6rem;
-    width: 80%;
+    width: 100%;
     border-radius: 2rem;
     box-shadow: 1.5px 1px 1px 2px rgb(20, 20, 152);
 }
 
 .container-project .list:hover{
-    box-shadow: 1.5px 1px 1px 2px rgb(174, 174, 253);
+    box-shadow: 1.5px 1px 1px 2px rgb(213, 213, 249);
 }
 
 /*contact*/
@@ -323,4 +327,84 @@ form button:hover{
     font-size: 20px;
     color: white;
     text-decoration: none;
+}
+
+/* media query */
+
+@media (max-width: 768px){
+    #home{
+        padding: 0rem;
+    }
+    #home span{
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    #home .content{
+        margin-top: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar .nav-link{
+        text-align: center;
+        margin: .5rem;
+        border-radius: 5px;
+        background-color: rgb(31, 31, 135);
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 15px;
+    }
+    .navbar-brand span{
+        font-size: 18px;
+    }
+    .container-about{
+        padding: 0rem;
+    }
+    .container-education h5{
+        font-size: 18px;
+    }
+    .container-education .card-content{
+        margin-left: -2rem;
+        padding-top: 1rem;
+        width: 125%;
+    }
+    .card-content p{
+        line-height: 1rem;
+    }
+    .container-skills .card-text{
+        font-size: 15px;
+    }
+    .container-project{
+        margin: 0rem;
+    }
+    .container-project .list{
+        width: 100%;
+    }
+    .container-project img{
+        margin: .5rem;
+        width: 100%;
+    }
+    .container-contact{
+        margin: 0rem -2rem;
+    }
+    .container-contact form{
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0rem;
+    }
+    .social-links h5{
+        font-size: 18px;
+    }
+    .social-links{
+        margin: 1rem;
+        padding: 0rem;
+    }
+    .form-col input{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    form button{
+        font-size: 15px;
+        padding: .5rem 1rem;
+    }
 }
